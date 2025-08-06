@@ -1,0 +1,6 @@
+model_name_or_path: /fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/llama/LLaMA-Factory/output/qwen2_5vl_lora_sft_Eimage
+adapter_name_or_path: /fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/llama/LLaMA-Factory/saves/qwen2_5vl-7b/lora/sft
+template: qwen2_vl
+finetuning_type: lora
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang]
+trust_remote_code: true
