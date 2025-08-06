@@ -232,8 +232,8 @@ def main():
 
         # 保存平均指标
         with open("/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/metric/other.txt", 'a') as f:  
-            f.write(f"try Average similarity: {average_similarity:.4f}\n")
-            f.write(f"try Average fluency: {avg_fluency:.4f}\n")  
+            f.write(f"qwen Average similarity: {average_similarity:.4f}\n")
+            f.write(f"qwen Average fluency: {avg_fluency:.4f}\n")  
 
 
 if __name__ == "__main__":  
