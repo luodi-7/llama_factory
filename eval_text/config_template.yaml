@@ -1,0 +1,23 @@
+# 多模态模型推理配置文件模板
+
+# 模型配置
+model_name_or_path: "/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/llama/LLaMA-Factory/saves/keyevl-7b_Eimage_all"
+# 如果有LoRA适配器，取消注释下面这行
+# adapter_name_or_path: "/path/to/your/adapter"
+
+# 模板配置
+template: "keye_vl"  # Keye模型专用模板
+trust_remote_code: true
+
+# 图像处理配置
+image_max_pixels: 262144
+video_max_pixels: 16384
+
+# 推理后端
+infer_backend: "huggingface"
+
+# 生成参数（可选，可以在命令行中覆盖）
+# max_new_tokens: 512
+# temperature: 0.7
+# top_p: 0.9
+# do_sample: true

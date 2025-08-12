@@ -12,7 +12,7 @@ from FlagEmbedding import FlagModel
 TEST_JSONL_PATH = '/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/cot_picture/Eimages/annotations/all/eval_data.jsonl'
 MODEL_PATH = '/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/llama/LLaMA-Factory/output/qwen2_5vl_lora_sft'
 SIMILARITY_MODEL_PATH = '/fs-computility/niuyazhe/shared/dilab/model/bge-base-zh-v1.5'
-OUTPUT_JSONL_PATH = '/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/metric/other/try.jsonl'
+OUTPUT_JSONL_PATH = '/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/metric/other/new_qwen.jsonl'
 
 # vllm配置参数
 MAX_MODEL_LEN = 8192
@@ -240,8 +240,8 @@ def main():
 
         # 保存平均指标
         with open("/fs-computility/niuyazhe/shared/xueyingyi/xueyingyi/metric/other.txt", 'a') as f:  
-            f.write(f"try Average similarity: {average_similarity:.4f}\n")
-            f.write(f"try Average fluency: {avg_fluency:.4f}\n")  
+            f.write(f"new_qwen Average similarity: {average_similarity:.4f}\n")
+            f.write(f"new_qwen Average fluency: {avg_fluency:.4f}\n")  
 
 
 if __name__ == "__main__":  
